@@ -124,8 +124,9 @@ if __name__ == "__main__":
             
             keys = pygame.key.get_pressed()
             
-            if keys[pygame.K_UP]: #you can put any event you want over here to start new game
+            if blink.value == 1: #you can put any event you want over here to start new game
                 game.newGame()
+                blink.value = 0
             
             if keys[pygame.K_ESCAPE]:
                 break
